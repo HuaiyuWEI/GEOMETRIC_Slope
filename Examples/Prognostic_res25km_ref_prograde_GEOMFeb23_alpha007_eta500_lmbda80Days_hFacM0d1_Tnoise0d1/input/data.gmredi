@@ -1,0 +1,33 @@
+# =====================
+# | gmredi parameters |
+# =====================
+
+# Parameters for gmredi package
+ &GM_PARM01
+ GM_isopycK=0.00000000e+00,
+ GM_background_K=0.00000000e+00,
+ GM_maxSlope=1.00000000e-01,
+ GM_taper_scheme='clipping',
+ GM_AdvForm=.FALSE.,
+ vert_struc=.FALSE.,
+ GM_useGEOM=.TRUE.,
+ GEOM_lmbda=1.45000000e-07,
+ GEOM_alpha=7.00000000e-02,
+ GEOM_minval_K=0.00000000e+00,
+ GEOM_maxval_K=1.00000000e+04,
+ ene_local=.TRUE.,
+ ene_init=1.00000000e-02,
+  GEOM_ConstEner=0.00000000e+00,
+ ene_kappa=5.00000000e+02,
+ GEOM_DepthTaper=.FALSE.,
+ GEOM_SlopeAware=.FALSE.,
+ GEOM_SloAwa_Burger=.TRUE.,
+ UseVarLmbda=.FALSE.,
+ ene_const=.FALSE.,
+ UseMLTrhines=.FALSE.,
+ GEOM_pickup_write_mdsio=.TRUE.,
+ GEOM_pickup_write_mnc=.FALSE.,
+ GEOM_pickup_read_mdsio=.FALSE.,
+ GEOM_pickup_read_mnc=.FALSE.,
+ &
+

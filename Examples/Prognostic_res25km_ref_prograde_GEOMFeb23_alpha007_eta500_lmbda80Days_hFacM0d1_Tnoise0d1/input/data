@@ -1,0 +1,107 @@
+# ====================
+# | Model parameters |
+# ====================
+
+# Continuous equation parameters
+ &PARM01
+ vectorInvariantMomentum=.TRUE.,
+ viscAr=0.00000000e+00,
+ viscA4=0.00000000e+00,
+ viscAh=0.00000000e+00,
+ viscA4Grid=1.00000000e-01,
+ viscAhGrid=0.00000000e+00,
+ viscA4GridMax=5.00000000e-01,
+ viscAhGridMax=1.00000000e+00,
+ useAreaViscLength=.FALSE.,
+ useFullLeith=.TRUE.,
+ viscC4leith=0.00000000e+00,
+ viscC4leithD=0.00000000e+00,
+ viscC2leith=0.00000000e+00,
+ viscC2leithD=0.00000000e+00,
+ viscC4smag=0.00000000e+00,
+ tempAdvScheme=80,
+ saltAdvScheme=80,
+ diffKrT=0.00000000e+00,
+ diffKhT=0.00000000e+00,
+ diffK4T=0.00000000e+00,
+ tempStepping=.TRUE.,
+ saltStepping=.FALSE.,
+ staggerTimeStep=.TRUE.,
+ eosType='LINEAR',
+ tAlpha=1.00000000e-04,
+ sBeta=0.00000000e+00,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+ bottomDragLinear=0.00000000e+00,
+ bottomDragQuadratic=2.50000000e-03,
+ f0=1.00000000e-04,
+ beta=0.00000000e+00,
+ gravity=9.81000000e+00,
+ quasiHydrostatic=.FALSE.,
+ fPrime=0.00000000e+00,
+ ivdc_kappa=1.00000000e+02,
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ exactConserv=.TRUE.,
+ useCDscheme=.FALSE.,
+ hFacMin=1.00000000e-01,
+ readBinaryPrec=64,
+ useSingleCpuIO=.TRUE.,
+ debugLevel=1,
+ useJamartWetPoints=.TRUE.,
+ useJamartMomAdv=.TRUE.,
+ hFacMinDr=1.04837500e+01,
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ useSRCGSolver=.TRUE.,
+ cg2dMaxIters=1000,
+ cg2dTargetResidual=1.00000000e-12,
+ &
+
+# Time stepping parameters
+ &PARM03
+ alph_AB=5.00000000e-01,
+ beta_AB=4.16666667e-01,
+ nIter0=0,
+ abEps=1.00000000e-01,
+ chkptFreq=0.00000000e+00,
+ pChkptFreq=1.57680000e+08,
+ taveFreq=0.00000000e+00,
+ dumpFreq=0.00000000e+00,
+ monitorFreq=1.57680000e+08,
+ dumpInitAndLast=.TRUE.,
+ pickupStrictlyMatch=.FALSE.,
+ endTime=3784363254,
+ deltaT=1.67400000e+03,
+ &
+
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ usingSphericalPolarGrid=.FALSE.,
+ delX=2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 
+      2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 
+      2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 
+      2.50000000e+04, 2.50000000e+04,
+ delY=2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 
+      2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 
+      2.50000000e+04, 2.50000000e+04, 2.50000000e+04, 2.50000000e+04,
+ delR=1.04837500e+01, 1.05045671e+01, 1.05299807e+01, 1.05610021e+01, 1.05988638e+01, 1.06450665e+01, 1.07014365e+01, 1.07701947e+01, 1.08540386e+01, 1.09562412e+01, 
+      1.10807675e+01, 1.12324123e+01, 1.14169609e+01, 1.16413741e+01, 1.19139999e+01, 1.22448078e+01, 1.26456436e+01, 1.31304943e+01, 1.37157476e+01, 1.44204186e+01, 
+      1.52663072e+01, 1.62780281e+01, 1.74828428e+01, 1.89101990e+01, 2.05908716e+01, 2.25555976e+01, 2.48331157e+01, 2.74475814e+01, 3.04154302e+01, 3.37419122e+01, 
+      3.74177088e+01, 4.14162083e+01, 4.56921145e+01, 5.01819984e+01, 5.48071409e+01, 5.94785734e+01, 6.41037159e+01, 6.85935998e+01, 7.28695060e+01, 7.68680054e+01, 
+      8.05438021e+01, 8.38702841e+01, 8.68381328e+01, 8.94525986e+01, 9.17301167e+01, 9.36948427e+01, 9.53755153e+01, 9.68028715e+01, 9.80076862e+01, 9.90194071e+01, 
+      9.98652956e+01, 1.00569967e+02, 1.01155220e+02, 1.01640071e+02, 1.02040906e+02, 1.02371714e+02, 1.02644340e+02, 1.02868753e+02, 1.03053302e+02, 1.03204947e+02, 
+      1.03329473e+02, 1.03431676e+02, 1.03515520e+02, 1.03584278e+02, 1.03640648e+02, 1.03686851e+02, 1.03724712e+02, 1.03755734e+02, 1.03781147e+02, 1.03801964e+02,
+ &
+
+# Input datasets
+ &PARM05
+ bathyFile='bathyFile.bin',
+ hydrogThetaFile='hydrogThetaFile.bin',
+ zonalWindFile='zonalWindFile.bin',
+ surfQfile='surfQfile.bin',
+ &
+

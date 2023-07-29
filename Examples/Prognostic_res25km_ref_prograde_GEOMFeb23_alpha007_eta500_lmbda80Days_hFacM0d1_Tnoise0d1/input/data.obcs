@@ -1,0 +1,24 @@
+# ===================
+# | OBCS parameters |
+# ===================
+
+# Open boundary types and locations
+ &OBCS_PARM01
+ useOrlanskiNorth=.TRUE.,
+ OB_Jnorth=24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 
+      24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 
+      24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 
+      24, 24,
+ useOBCSbalance=.TRUE.,
+ OBCS_balanceFacN=-1.00000000e+00,
+ OBCS_balanceFacE=0.00000000e+00,
+ OBCS_balanceFacS=0.00000000e+00,
+ OBCS_balanceFacW=0.00000000e+00,
+ &
+
+# Orlanski parameters
+ &OBCS_PARM02
+ cvelTimeScale=5.02200000e+03,
+ CMAX=4.50000000e-01,
+ &
+

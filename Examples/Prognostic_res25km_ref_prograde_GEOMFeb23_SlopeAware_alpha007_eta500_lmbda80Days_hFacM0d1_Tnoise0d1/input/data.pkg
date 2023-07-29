@@ -1,0 +1,8 @@
+# Packages
+ &PACKAGES
+ usePTRACERS=.FALSE.,
+ useDiagnostics=.TRUE.,
+ useRBCS=.TRUE.,
+ useLayers=.FALSE.,
+ useGMRedi=.TRUE.,
+ /
